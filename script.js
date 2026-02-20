@@ -1,13 +1,13 @@
 // Fake companies
 let stocks = [
-  {name: "BananaTech", price: 100, volatility: 0.02, drift: 0.001},
+  {name: "BananaTech", price: 50, volatility: 0.02, drift: 0.001},
   {name: "SpaceBread", price: 50, volatility: 0.04, drift: 0.002},
-  {name: "DuckCoin", price: 20, volatility: 0.07, drift: 0.003}
+  {name: "WackCrazyExpensive", price: 500, volatility: 0.07, drift: 0.003}
 ];
 
 // Player
 let player = {
-  cash: 10000,
+  cash: 1000,
   portfolio: {}
 };
 
@@ -74,4 +74,5 @@ function updateUI() {
 setInterval(() => {
   updatePrices();
   updateUI();
+
 }, 1000);
